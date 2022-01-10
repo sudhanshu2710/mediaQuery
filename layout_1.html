@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .nav {
+        margin: 20px;
+        height: 50px;
+      }
+      .content {
+        height: 200px;
+
+        display: flex;
+      }
+      .div {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+        margin: 20px;
+      }
+      @media screen and (max-width: 592px) {
+        .nav {
+          margin: 20px;
+          height: 50px;
+        }
+        .content {
+          display: list-item;
+          margin-right: 40px;
+        }
+        .div {
+          /* width: 100%;
+          height: 100%; */
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin: 20px">
+      <nav class="nav" style="background: yellow">Navigation</nav>
+      <div class="content">
+        <div class="div" style="background: red">Left Box</div>
+        <div class="div" style="background: green">Right Box</div>
+      </div>
+    </div>
+  </body>
+</html>

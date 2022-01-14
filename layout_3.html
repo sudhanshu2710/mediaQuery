@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+      .nav {
+        height: 50px;
+        margin-bottom: 20px;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: 60% 40%;
+      }
+      .div1 {
+        margin-right: 10px;
+        height: 400px;
+      }
+      .div2 {
+        margin-bottom: 10px;
+        height: 130px;
+      }
+      @media screen and (max-width: 992px) {
+        body {
+          margin: 20px;
+        }
+        .nav {
+          height: 50px;
+          width: 98%;
+        }
+        .content {
+          display: grid;
+          grid-template-columns: auto;
+        }
+        .div1 {
+          height: 100px;
+          width: 98%;
+        }
+
+        .green {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          width: 100%;
+        }
+        .div2 {
+          height: 100px;
+          width: 95%;
+          margin-top: 10px;
+        }
+      }
+
+      @media screen and (max-width: 592px) {
+        body {
+          margin: 20px;
+        }
+        .nav {
+          height: 50px;
+          width: 100%;
+        }
+        .content {
+          display: grid;
+          grid-template-columns: auto;
+        }
+        .green {
+          display: grid;
+          grid-template-columns: auto;
+        }
+        .div1 {
+          height: 100px;
+          width: 100%;
+        }
+        .div2 {
+          height: 100px;
+          width: 98%;
+          margin-top: 10px;
+          margin-left: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin: 20px">
+      <nav class="nav" style="background: yellow">Navigation</nav>
+      <div class="content">
+        <div class="div1" style="background: red">Left Box</div>
+        <div class="green">
+          <div class="div2" style="background: green">Right Box</div>
+          <div class="div2" style="background: green">Right Box</div>
+          <div class="div2" style="background: green">Right Box</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

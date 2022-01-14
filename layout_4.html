@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+      .nav {
+        height: 50px;
+        margin-bottom: 20px;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+      }
+
+      .div2 {
+        margin-bottom: 10px;
+        height: 300px;
+        width: 98%;
+      }
+      @media screen and (max-width: 992px) {
+        body {
+        margin: 20px;
+      }
+      .nav {
+        height: 50px;
+        margin-bottom: 20px;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 500px;
+      }
+
+      .div2 {
+        margin-bottom: 10px;
+        height: 91%;
+        width: 98%;
+      }
+      @media screen and (max-width: 592px) {
+        body {
+        margin: 20px;
+      }
+      .nav {
+        height: 50px;
+        margin-bottom: 20px;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: auto;
+        height: 500px;
+      }
+
+      .div2 {
+        margin-bottom: 10px;
+        height: 92%;
+        margin-top: 10px;
+        width: 98%;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin: 20px">
+      <nav class="nav" style="background: yellow">Navigation</nav>
+      <div class="content">
+        <div class="div2" style="background: red">Left Box</div>
+        <div class="div2" style="background: blue">Right Box</div>
+        <div class="div2" style="background: green">Right Box</div>
+        <div class="div2" style="background: grey">Right Box</div>
+      </div>
+    </div>
+  </body>
+</html>
